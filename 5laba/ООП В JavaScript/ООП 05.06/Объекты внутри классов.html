@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<script>
+			(function () {
+				class Employee {
+					constructor(name, position, department) {
+						this.name = name;
+						this.position = position;
+						this.department = department;
+					}
+				}
+
+				class Position {
+					constructor(name, age) {
+                        this.name = name;
+						this.age = age;
+                    }
+				}
+
+				class Department {
+                    constructor(name, address) {
+                        this.name = name;
+						this.address = address;
+                    }
+                }
+
+				// 2
+				var oleg = new Employee("Олег", new Position("Слесарь", 16), new Department("№34", "Улица Колотушкина"));
+
+				// 3
+				console.log(`${oleg.name}\n${oleg.position.name}\n${oleg.department.name}`);
+			})();
+		</script>
+	</head>
+</html>
